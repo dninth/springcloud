@@ -19,7 +19,7 @@
 </dependencies>
   ```
   
-  - **application.yml**
+  - **application.yml** 
   
     ```yaml
     server:
