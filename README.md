@@ -56,4 +56,3 @@
   
 - 启动 **EurekaApplication** 在浏览器地址栏输入 http://localhost:8761/ 即可进入 Eureka 管理服界面。
 
-  ![](img/eureka.png)
