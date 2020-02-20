@@ -17,11 +17,8 @@ public class ClientPortController {
     @Value("${server.port}")
     private String port;
 
-    @Value("${spring.application.name}")
-    private String name;
-
     @GetMapping("/getPort")
-    public String getPort() {
+    public String getPort(String name) {
         return "我是" + name + "端口号是：" + port;
     }
 }
