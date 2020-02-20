@@ -15,6 +15,6 @@ public class RibbonService {
     private RestTemplate restTemplate;
 
     public String hi(String name) {
-        return restTemplate.getForObject("http://client-hi/clientHi/getPort?name=" + name, String.class);
+        return restTemplate.getForObject("http://client-hi/hi?name=" + name, String.class);
     }
 }

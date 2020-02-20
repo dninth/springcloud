@@ -1,0 +1,9 @@
+server:
+  port: 8020
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/  # 去该地址注册自己
+spring:
+  application:
+    name: ribbon   # 注册时的名字

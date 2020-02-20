@@ -1,0 +1,12 @@
+server:
+  port: 8030
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/  # 去该地址注册自己
+spring:
+  application:
+    name: feign   # 注册时的名字
+feign:
+  hystrix:
+    enabled: true

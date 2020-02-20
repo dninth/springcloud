@@ -1,0 +1,17 @@
+server:
+  port: 8040
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/  # 去该地址注册自己
+spring:
+  application:
+    name: zuul   # 注册时的名字
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      service-id: ribbon
+    api-b:
+      path: /api-b/**
+      service-id: feign

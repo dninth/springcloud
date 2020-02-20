@@ -11,14 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2020-02-20 11:40
  */
 @RestController
-@RequestMapping("/clientHi")
 public class ClientPortController {
 
     @Value("${server.port}")
     private String port;
 
-    @GetMapping("/getPort")
-    public String getPort(String name) {
+    @GetMapping("/hi")
+    public String hi(String name) {
         return "我是" + name + "端口号是：" + port;
     }
 }

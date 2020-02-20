@@ -7,6 +7,8 @@
         <module>eureka_server</module>
         <module>eureka_client</module>
         <module>ribbon</module>
+        <module>feign</module>
+        <module>zuul</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
