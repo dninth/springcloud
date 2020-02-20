@@ -1,0 +1,9 @@
+server:
+  port: 8010
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/  # 去该地址注册自己
+spring:
+  application:
+    name: client-hi   # 注册时的名字
